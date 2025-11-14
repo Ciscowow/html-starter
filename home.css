@@ -1,0 +1,329 @@
+  @font-face {
+    font-family: 'Hagrid';
+    src: url('fonts/Hagrid-Light.otf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Hagrid';
+    src: url('fonts/Hagrid-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'NeueMachina';
+    src: url('fonts/NeueMachina-Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'NeueMachina';
+    src: url('fonts/NeueMachina-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  html {
+    font-size: 16px; 
+  }
+
+  body {
+    font-family: 'Hagrid', 'NeueMachina';
+      background: linear-gradient(to bottom,
+    #fdf9f5 45%,   
+    #c6c4bb 48%,
+    #8e9287 52%,   
+    #576358 58%, 
+    #233831 100%   
+  );
+  line-height: 0.8;
+    margin: 0;
+    padding: 0;
+  }
+
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2.5rem 0 1.25rem; 
+    font-size: 1.1rem;
+    background: transparent;
+    box-sizing: border-box;
+  }
+
+
+  .nav-left a {
+    margin-right: 3rem;
+    text-decoration: none;
+    color: #233831;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    margin-left: 0.5rem;
+  }
+
+  .nav-left a:hover {
+    color: #a6c4ba;
+  }
+
+  .nav-right .resume-btn {
+    background-color: #1a2f29;
+    color: #fdf9f5;
+    text-decoration: none;
+    margin-right: 0.4rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    transition: 0.3s;
+    font-family: 'Hagrid';
+  }
+
+  .nav-right .resume-btn:hover {
+    background-color: #26493b;
+  }
+
+  .divider {
+    width: 90%;
+    height: 0.125rem; 
+    background-color: #1a1a1a;
+    margin: 0 auto 3.75rem auto;
+    border-radius: 0.0625rem;
+  }
+
+  .about-section {
+    min-height: 100vh;
+    padding: 0 15%;
+    color: #1a1a1a;
+    box-sizing: border-box;
+    position: relative;
+    font-weight: 400;
+    margin: 5.625rem 0; 
+  }
+
+  .intro-about {
+    padding-top: 5rem; 
+    max-width: 62.5rem; 
+    margin-left: -9rem;
+    text-align: left;
+  }
+
+  .intro-about h1 {
+    font-family: 'Hagrid';
+    font-weight: 300;
+    font-size: 5rem; 
+    margin: 0;
+    color: #1a2f29;
+    letter-spacing: 0.21875rem; 
+  }
+
+  .intro-about h1 span {
+    color: #233831;
+  }
+
+  .intro-about h2 {
+    font-family: 'NeueMachina';
+    font-weight: 400;
+    font-size: 2.2rem;
+    letter-spacing: 0.25rem; 
+    color: #465d54;
+    margin-top: 0.9375rem; 
+  }
+
+  .intro-about p {
+    font-family: 'Hagrid';
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    text-align: justify;
+    margin-top: -0.9375rem;
+    margin-bottom: -2.1875rem; 
+    max-width: 53.125rem; 
+    color: #57574f;
+  }
+
+  .socials {
+    margin-top: 2.5rem; 
+  }
+
+  .socials a {
+    font-size: 2.5rem;
+    margin-right: 1.5625rem; 
+    color: #292926;
+    transition: color 0.3s ease;
+  }
+
+  .socials a:hover {
+    color: #465d54;
+  }
+
+  .hero{
+    display:grid;
+    grid-template-columns: 1.1fr 420px;
+    align-items:start;
+    gap:2rem;
+    padding-right:8%;
+  }
+
+  .hero .intro-about{ margin-left:0; }
+
+  .hero-art {
+    position: relative;
+    height: 360px;
+    justify-self: end;
+    transform: translate(125px, -420px);
+  }
+
+  .hero-box{
+    position:absolute;
+    right:10px;
+    bottom:-130px;
+    width:260px;
+  }
+
+  .coin {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #292926;
+  }
+
+  .coin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+  }
+
+  .coin-lg{  width:130px; height:130px; top: -10px; right: 95px; }
+  .coin-md{  width:110px; height:110px; top:  65px; right: -15px; }
+  .coin-sm{  width: 90px; height: 90px; top: 140px; right: 105px; }
+  .coin-xs{  width: 78px; height: 78px;  top: 200px; right: 25px; }
+
+  .projects-section {
+    padding-top: 1.5rem;   
+    padding-bottom: 3.5rem;
+  }
+
+  .projects-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: -1rem;
+  }
+
+  .intro-projects {
+    margin-bottom: 15px;
+  }
+
+  .intro-projects h1 {
+    font-family: 'Hagrid';
+    font-weight: 300;
+    color: #abf7df;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: -2px;
+  }
+
+  .intro-projects h3 {
+    font-family: 'NeueMachina';
+    font-weight: 300;
+    font-size: 1rem;
+    margin-top: 30px;       
+    margin-bottom: 20px;
+    letter-spacing: -0.04rem;
+    text-align: center;
+    color: #a6c4ba;
+  }
+
+  .projects-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.projects-grid {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: 100%;
+}
+
+.project-card {
+    flex: 0 0 100%;
+    border-radius: 25px;
+    min-height: 450px;
+    padding: 2.5rem 10rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'NeueMachina';
+    font-weight: 400;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.project-card h2 {
+  font-family: 'Hagrid';
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-card p {
+  font-size: 1.1rem;
+  max-width: 75%;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(26, 47, 41, 0.85);
+  color: #abf7df;
+  border: none;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: #abf7df;
+  color: #1a2f29;
+}
+
+.prev-btn { left: 4%; }
+.next-btn { right: 4%; }
+
+footer {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px 0;
+  color: #ccc;
+  font-size: .5rem;
+  width: 100%;
+  position: relative;     
+}
